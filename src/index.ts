@@ -56,3 +56,5 @@ export class SudooRedux<TStore, TAction> {
         return this._initStore;
     }
 }
+
+export { AnyAction, Action, Reducer, Store } from 'redux';
