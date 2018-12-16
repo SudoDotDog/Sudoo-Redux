@@ -9,9 +9,9 @@ import { AnyAction, createStore, Reducer, Store } from "redux";
 
 export class SudooRedux<TStore, TAction> {
 
-    public static create(initStore: Store) {
+    public static create<TStore, TAction>(initStore: TStore) {
 
-        return new SudooRedux(initStore);
+        return new SudooRedux<TStore, TAction>(initStore);
     }
 
     private _initStore: TStore;

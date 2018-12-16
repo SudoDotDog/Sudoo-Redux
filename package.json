@@ -1,6 +1,6 @@
 {
   "name": "@sudoo/redux",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": ":sparkler: Redux integration",
   "main": "dist/index.js",
   "directories": {
