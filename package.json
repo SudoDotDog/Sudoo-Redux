@@ -30,7 +30,6 @@
   },
   "devDependencies": {
     "@sudoo/triforce": "^1.1.0",
-    "@types/node": "^10.12.18",
     "@types/redux": "^3.6.0"
   },
   "nyc": {
