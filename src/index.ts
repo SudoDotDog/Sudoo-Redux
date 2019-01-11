@@ -7,7 +7,7 @@
 import { _Map } from '@sudoo/bark';
 import { AnyAction, createStore, Reducer, Store } from "redux";
 
-export class SudooRedux<TStore, TAction> {
+export class SudooRedux<TStore = any, TAction = any> {
 
     public static create<TStore, TAction>(initStore: TStore) {
 
@@ -57,4 +57,7 @@ export class SudooRedux<TStore, TAction> {
     }
 }
 
-export { AnyAction, Action, Reducer, Store } from 'redux';
+export { Action, AnyAction, Reducer, Store } from 'redux';
+export { Connector } from './connect';
+export { SudooProvider } from './provider';
+

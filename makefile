@@ -47,6 +47,6 @@ else
 	@rm -rf coverage
 endif
 
-publish: install tests build
+publish: install tests clean build
 	@echo "[INFO] Publishing package"
 	@npm publish --access=public
