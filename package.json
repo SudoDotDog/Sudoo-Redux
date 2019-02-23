@@ -26,14 +26,14 @@
   "homepage": "https://github.com/SudoDotDog/Sudoo-Redux#readme",
   "dependencies": {
     "@sudoo/bark": "^2.1.0",
-    "react-redux": "^6.0.0",
+    "react-redux": "^6.0.1",
     "redux": "^4.0.1"
   },
   "devDependencies": {
-    "@sudoo/triforce": "^1.2.0",
+    "@sudoo/triforce": "^1.4.0",
     "@types/react-redux": "^7.0.1",
     "@types/redux": "^3.6.0",
-    "react": "^16.8.1"
+    "react": "^16.8.3"
   },
   "nyc": {
     "extension": [
