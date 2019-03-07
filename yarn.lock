@@ -45,6 +45,13 @@
   resolved "https://registry.yarnpkg.com/@types/chance/-/chance-1.0.1.tgz#c10703020369602c40dd9428cc6e1437027116df"
   integrity sha512-jtV6Bv/j+xk4gcXeLlESwNc/m/I/dIZA0xrt29g0uKcjyPob8iisj/5z0ARE+Ldfx4MxjNFNECG0z++J7zJgqg==
 
+"@types/hoist-non-react-statics@*":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.0.tgz#a59c0c995cc885bef1b8ec2241b114f9b35b517b"
+  integrity sha512-O2OGyW9wlO2bbDmZRH17MecArQfsIa1g//ve2IJk6BnmwEglFz5kdhP1BlgeqjVNH5IHIhsc83DWFo8StCe8+Q==
+  dependencies:
+    "@types/react" "*"
+
 "@types/mocha@^5.2.6":
   version "5.2.6"
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-5.2.6.tgz#b8622d50557dd155e9f2f634b7d68fd38de5e94b"
@@ -56,10 +63,11 @@
   integrity sha512-Nha5b+jmBI271jdTMwrHiNXM+DvThjHOfyZtMX9kj/c/LUj2xiLHsG/1L3tJ8DjAoQN48cHwUwtqBotjyXaSdQ==
 
 "@types/react-redux@^7.0.1":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@types/react-redux/-/react-redux-7.0.1.tgz#9dd2503be7a9861c5a092bf1c5050b7ade4dc62e"
-  integrity sha512-+DIH7TI2MT4Ke4lOrRMgNy//DzTDIzv5QwkJSD6AVrlsIgzf7yMM0JoWL5wJUXYwKQ2f1FgvwlvIVGD2QWQnew==
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@types/react-redux/-/react-redux-7.0.2.tgz#ac3726a94b64581224e9cfea1fb90aa2d72614ea"
+  integrity sha512-sIOvCQrR2fQBDwNmL+6YXKrqvjGvjdCTN4BxqCUsDYkhpXE7aAlrZaiTqH5r6u+r0o1MEx3J3oxZ0UQZp6lN1A==
   dependencies:
+    "@types/hoist-non-react-statics" "*"
     "@types/react" "*"
     redux "^4.0.0"
 
