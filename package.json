@@ -1,6 +1,6 @@
 {
   "name": "@sudoo/redux",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": ":sparkler: Redux integration",
   "main": "dist/index.js",
   "directories": {
@@ -30,10 +30,10 @@
     "redux": "^4.0.1"
   },
   "devDependencies": {
-    "@sudoo/triforce": "^1.4.0",
-    "@types/react-redux": "^7.0.1",
+    "@sudoo/triforce": "^1.5.0",
+    "@types/react-redux": "^7.0.3",
     "@types/redux": "^3.6.0",
-    "react": "^16.8.3"
+    "react": "^16.8.4"
   },
   "nyc": {
     "extension": [
