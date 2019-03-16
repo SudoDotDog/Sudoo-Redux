@@ -7,11 +7,11 @@
 import { _Map } from "@sudoo/bark/map";
 import { AnyAction, createStore, Reducer, Store } from "redux";
 
-export class SudooRedux<TStore = any, TAction = any> {
+export class Redux<TStore = any, TAction = any> {
 
     public static create<TStore, TAction>(initStore: TStore) {
 
-        return new SudooRedux<TStore, TAction>(initStore);
+        return new Redux<TStore, TAction>(initStore);
     }
 
     private _initStore: TStore;
@@ -29,13 +29,13 @@ export class SudooRedux<TStore = any, TAction = any> {
         return createStore(reducer);
     }
 
-    public reducer(action: TAction, reducer: ((current: TStore, reducer: any) => TStore)): SudooRedux<TStore, TAction> {
+    public reducer(action: TAction, reducer: ((current: TStore, reducer: any) => TStore)): Redux<TStore, TAction> {
 
         this._reducerMap.set(action, reducer);
         return this;
     }
 
-    public reducers(actions: Record<string, (current: TStore, reducer: any) => TStore>): SudooRedux<TStore, TAction> {
+    public reducers(actions: Record<string, (current: TStore, reducer: any) => TStore>): Redux<TStore, TAction> {
 
         _Map.keys(actions).forEach((name: string) => {
             this.reducer(name as any as TAction, actions[name]);
@@ -57,5 +57,5 @@ export class SudooRedux<TStore = any, TAction = any> {
 
 export { Action, AnyAction, Reducer, Store } from 'redux';
 export { Connector } from './connect';
-export { SudooProvider } from './provider';
+export { ReduxProvider } from './provider';
 

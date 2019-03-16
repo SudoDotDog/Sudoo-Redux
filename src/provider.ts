@@ -6,16 +6,16 @@
 
 import { createElement } from "react";
 import { Provider } from "react-redux";
-import { SudooRedux } from "./index";
+import { Redux } from "./index";
 
-export type SudooReduxProviderType = {
+export type ReduxProviderType = {
 
-    redux: SudooRedux;
+    redux: Redux;
     children: any;
 };
 
-export const SudooProvider: React.SFC<SudooReduxProviderType> =
-    (props: SudooReduxProviderType) =>
+export const ReduxProvider: React.SFC<ReduxProviderType> =
+    (props: ReduxProviderType) =>
         createElement(Provider as any, {
             store: props.redux.createStore(),
         }, props.children);
