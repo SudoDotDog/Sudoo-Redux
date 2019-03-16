@@ -8,15 +8,15 @@ import { ComponentType } from "react";
 import { connect } from "react-redux";
 import { Action } from "redux";
 
-export class Connector<S, P> {
+export class Connector<S, SP, AP> {
 
-    public static create<S, P>(): Connector<S, P> {
+    public static create<S, SP, AP>(): Connector<S, SP, AP> {
 
-        return new Connector<S, P>();
+        return new Connector<S, SP, AP>();
     }
 
-    private _connectedStatesFunction: ((store: S) => Partial<P>) | null;
-    private _connectedActions: ((dispatch: (action: Action) => void) => Partial<P>) | Partial<P> | null;
+    private _connectedStatesFunction: ((store: S) => SP) | null;
+    private _connectedActions: ((dispatch: (action: Action) => void) => AP) | AP | null;
 
     private constructor() {
 
@@ -24,19 +24,19 @@ export class Connector<S, P> {
         this._connectedActions = null;
     }
 
-    public connectStates(connector: (store: S) => Partial<P>): Connector<S, P> {
+    public connectStates(connector: (store: S) => SP): Connector<S, SP, AP> {
 
         this._connectedStatesFunction = connector;
         return this;
     }
 
-    public connectActions(connector: ((dispatch: (action: Action) => void) => Partial<P>) | Partial<P>): Connector<S, P> {
+    public connectActions(connector: ((dispatch: (action: Action) => void) => AP) | AP): Connector<S, SP, AP> {
 
         this._connectedActions = connector;
         return this;
     }
 
-    public connect<NewProps>(Component: any): ComponentType<NewProps> {
+    public connect<NewProps>(Component: React.ComponentType<any>): ComponentType<NewProps> {
 
         return connect(this._connectedStatesFunction, this._connectedActions)(Component) as any as ComponentType<NewProps>;
     }
