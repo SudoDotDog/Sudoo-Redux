@@ -26,7 +26,7 @@
   "homepage": "https://github.com/SudoDotDog/Sudoo-Redux#readme",
   "dependencies": {
     "@sudoo/bark": "^2.1.0",
-    "react-redux": "^6.0.1",
+    "react-redux": "^7.0.2",
     "redux": "^4.0.1"
   },
   "devDependencies": {
