@@ -25,15 +25,15 @@
   },
   "homepage": "https://github.com/SudoDotDog/Sudoo-Redux#readme",
   "dependencies": {
-    "@sudoo/bark": "^2.1.0",
-    "react-redux": "^6.0.1",
+    "@sudoo/bark": "^2.7.1",
+    "react-redux": "^7.1.0",
     "redux": "^4.0.1"
   },
   "devDependencies": {
-    "@sudoo/triforce": "^1.5.0",
-    "@types/react-redux": "^7.0.5",
+    "@sudoo/triforce": "^1.6.0",
+    "@types/react-redux": "^6.0.1",
     "@types/redux": "^3.6.0",
-    "react": "^16.8.4"
+    "react": "^16.8.6"
   },
   "nyc": {
     "extension": [
