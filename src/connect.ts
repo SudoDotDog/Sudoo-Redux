@@ -38,6 +38,10 @@ export class Connector<S, SP, AP> {
 
     public connect<NewProps>(Component: React.ComponentType<any>): ComponentType<NewProps> {
 
-        return connect(this._connectedStatesFunction, this._connectedActions)(Component) as any as ComponentType<NewProps>;
+        const defaultConnectedAction = {};
+        return connect(
+            this._connectedStatesFunction,
+            this._connectedActions || defaultConnectedAction,
+        )(Component) as any as ComponentType<NewProps>;
     }
 }
