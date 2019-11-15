@@ -4,7 +4,6 @@
  * @description Index
  */
 
-import { _Map } from "@sudoo/bark/map";
 import { AnyAction, createStore, Reducer, Store } from "redux";
 
 export class Redux<TStore = any, TAction = any> {
@@ -37,7 +36,7 @@ export class Redux<TStore = any, TAction = any> {
 
     public reducers(actions: Record<string, (current: TStore, reducer: any) => TStore>): Redux<TStore, TAction> {
 
-        _Map.keys(actions).forEach((name: string) => {
+        Object.keys(actions).forEach((name: string) => {
             this.reducer(name as any as TAction, actions[name]);
         });
         return this;
