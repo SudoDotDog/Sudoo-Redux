@@ -29,7 +29,7 @@
     "redux": "^4.0.4"
   },
   "devDependencies": {
-    "@sudoo/triforce": "^1.10.0",
+    "@sudoo/triforce": "^2.0.4",
     "@types/react-redux": "^7.1.5",
     "@types/redux": "^3.6.0",
     "react": "^16.12.0",
