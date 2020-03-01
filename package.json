@@ -29,10 +29,10 @@
     "redux": "4.0.5"
   },
   "devDependencies": {
-    "@sudoo/react-force": "^1.6.2",
-    "@sudoo/react-force-dev": "^1.6.4",
-    "@sudoo/triforce": "^2.1.0",
-    "@types/react-redux": "^7.1.6",
+    "@sudoo/react-force": "^1.7.0",
+    "@sudoo/react-force-dev": "^1.7.0",
+    "@sudoo/triforce": "^2.2.1",
+    "@types/react-redux": "^7.1.7",
     "@types/redux": "^3.6.0"
   },
   "nyc": {

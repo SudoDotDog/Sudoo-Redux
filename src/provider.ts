@@ -14,8 +14,11 @@ export type ReduxProviderType = {
     children: any;
 };
 
-export const ReduxProvider: React.SFC<ReduxProviderType> =
-    (props: ReduxProviderType) =>
-        createElement(Provider as any, {
-            store: props.redux.createStore(),
-        }, props.children);
+export const ReduxProvider: React.SFC<ReduxProviderType> = (props: ReduxProviderType) => {
+
+    const target: any = Provider as any;
+    const args: any = {
+        store: props.redux.createStore(),
+    };
+    return createElement(target, args, props.children);
+};
