@@ -10,7 +10,7 @@ import { Action } from "redux";
 
 export class Connector<S, SP, AP> {
 
-    public static create<S, SP = {}, AP = {}>(): Connector<S, SP, AP> {
+    public static create<S, SP = any, AP = any>(): Connector<S, SP, AP> {
 
         return new Connector<S, SP, AP>();
     }

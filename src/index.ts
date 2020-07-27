@@ -8,7 +8,7 @@ import { AnyAction, createStore, Reducer, Store } from "redux";
 
 export class Redux<TStore = any, TAction = any> {
 
-    public static create<TStore, TAction>(initStore: TStore) {
+    public static create<TStore, TAction>(initStore: TStore): Redux<TStore, TAction> {
 
         return new Redux<TStore, TAction>(initStore);
     }

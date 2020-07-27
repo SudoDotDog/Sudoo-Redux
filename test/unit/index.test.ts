@@ -21,7 +21,7 @@ describe('Given a {Redux} class', (): void => {
 
         const clazz: Redux<any, any> = redux();
 
-        // tslint:disable-next-line
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
         expect(clazz).to.be.exist;
     });
 
@@ -30,7 +30,7 @@ describe('Given a {Redux} class', (): void => {
         const clazz: Redux<any, any> = redux();
         const store: Store = clazz.createStore();
 
-        // tslint:disable-next-line
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
         expect(store).to.be.exist;
     });
 });
