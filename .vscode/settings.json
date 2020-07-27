@@ -4,6 +4,7 @@
         "clazz",
         "codecov",
         "ifeq",
+        "mocharc",
         "sudoo",
         "triforce",
         "tshook"
