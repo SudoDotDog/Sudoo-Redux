@@ -6,3 +6,11 @@
 [![downloads](https://img.shields.io/npm/dm/@sudoo/redux.svg)](https://www.npmjs.com/package/@sudoo/redux)
 
 :sparkler: Redux integration
+
+## Install
+
+```sh
+yarn add @sudoo/redux
+# Or
+npm install @sudoo/redux --save
+```
