@@ -17,14 +17,14 @@
   },
   "homepage": "https://github.com/SudoDotDog/Sudoo-Redux#readme",
   "dependencies": {
-    "react-redux": "7.2.3",
-    "redux": "4.0.5"
+    "react-redux": "7.2.4",
+    "redux": "4.1.0"
   },
   "devDependencies": {
     "@sudoo/io": "^1.8.0",
     "@sudoo/react-force": "^1.8.0",
     "@sudoo/react-force-dev": "^1.8.0",
-    "@sudoo/triforce": "^2.9.23",
+    "@sudoo/triforce": "^2.9.24",
     "@types/react-redux": "^7.1.16",
     "@types/redux": "^3.6.0"
   },
