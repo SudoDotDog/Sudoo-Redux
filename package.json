@@ -18,7 +18,7 @@
   "homepage": "https://github.com/SudoDotDog/Sudoo-Redux#readme",
   "dependencies": {
     "react-redux": "7.2.6",
-    "redux": "4.1.1"
+    "redux": "4.1.2"
   },
   "devDependencies": {
     "@sudoo/io": "^1.8.0",
