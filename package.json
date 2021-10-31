@@ -24,7 +24,7 @@
     "@sudoo/io": "^1.8.0",
     "@sudoo/react-force": "^1.9.0",
     "@sudoo/react-force-dev": "^1.9.0",
-    "@sudoo/triforce": "^2.15.0",
+    "@sudoo/triforce": "^2.15.1",
     "@types/react-redux": "^7.1.20",
     "@types/redux": "^3.6.0"
   },
